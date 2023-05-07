@@ -94,7 +94,7 @@ router.get('/profile', function (req, res, next) {
 		}
 	});
 });
-
+ 
 router.get('/logout', function (req, res, next) {
 	console.log("logout")
 	if (req.session) {
