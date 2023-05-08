@@ -1,5 +1,24 @@
-# Dummy-hackX-niet-project
+NodejsProject
 
 
-<img width="959" alt="image" src="https://user-images.githubusercontent.com/84653396/236644558-a592f1ce-6488-4e88-89c7-4287a9bac839.png">
+
+## Authors
+
+Ram Bhai
+
+## Deployment
+
+To deploy this project run
+
+```bash
+  npm run dev
+```
+
+
+## Use Skill
+
+ hbs
+ css
+ js
+ expressjs nodejs mongoDB
 
