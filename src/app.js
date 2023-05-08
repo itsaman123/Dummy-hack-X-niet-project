@@ -1,7 +1,7 @@
 const express =require("express");
 require("./db/conn");
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3002;
 const path = require("path");
 const hbs = require("hbs");
 const Register = require("./models/register");
@@ -119,6 +119,9 @@ app.post("/login",async(req,res)=>{
 });
 
 
+app.get("/blog1",(req,res)=>{
+    res.render("blog1")
+})
 app.listen(port,()=>{
     console.log(`the server is running port no ${port}`);
 });
