@@ -34,8 +34,8 @@ nav ul li a{
     display: block;
 }
 nav ul li a:hover{
-    background-color: white;
-    color: lightseagreen;
+     color:rgb(179, 115, 38) ;
+    text-decoration: none;
 }
 nav ul li ul{
   flex-direction: column;
