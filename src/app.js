@@ -125,6 +125,9 @@ app.get("/blog1",(req,res)=>{
 app.get("/payment",(req,res)=>{
     res.render("payment")
 })
+app.get("/shelter",(req,res)=>{
+    res.render("shelter")
+})
 app.listen(port,()=>{
     console.log(`the server is running port no ${port}`);
 });
