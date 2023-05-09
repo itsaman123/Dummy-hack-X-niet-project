@@ -122,6 +122,9 @@ app.post("/login",async(req,res)=>{
 app.get("/blog1",(req,res)=>{
     res.render("blog1")
 })
+app.get("/payment",(req,res)=>{
+    res.render("payment")
+})
 app.listen(port,()=>{
     console.log(`the server is running port no ${port}`);
 });
