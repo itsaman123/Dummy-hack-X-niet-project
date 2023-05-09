@@ -161,36 +161,36 @@
         <div id="success-message" style="display:none; background-color:aquamarine; width:100%;">successfull!</div>
         {{!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p> --}}
       </div>
-      <form>
+      <form action="/pay" method ="post">
         <div class="products">
           <h3 class="title">Checkout <i class="fa-brands fa-cc-visa"></i> <i class="fa-brands fa-cc-mastercard"></i></h3>
-          <input id="ammount" type="number" class="form-control" placeholder="Enter Ammount in INR" aria-label="Ammount in INR" required>
+          <input id="amount" type="number" name="amount" class="form-control" placeholder="Enter Ammount in INR" aria-label="Ammount in INR" required>
         </div>
         <div class="card-details">
           <h3 class="title">Card Details</h3>
           <div class="row">
             <div class="form-group col-sm-7">
               <label for="card-holder">Card Holder</label>
-              <input id="card-holder" type="text" class="form-control" placeholder="Card Holder" aria-label="Card Holder" aria-describedby="basic-addon1" required>
+              <input id="card-holder" type="text" name="name" class="form-control" placeholder="Card Holder" aria-label="Card Holder" aria-describedby="basic-addon1" required>
             </div>
             <div class="form-group col-sm-5">
               <label for="">Expiration Date</label>
               <div class="input-group expiration-date">
-                <input type="text" class="form-control" placeholder="MM" aria-label="MM" aria-describedby="basic-addon1" pattern="\d{2}" required>
+                <input type="text" name="exp_month" class="form-control" placeholder="MM" aria-label="MM" aria-describedby="basic-addon1" pattern="\d{2}" required>
                 <span class="date-separator">/</span>
-                <input type="text" class="form-control" placeholder="YY" aria-label="YY" aria-describedby="basic-addon1" pattern="\d{2}" required>
+                <input type="text" name="exp_year" class="form-control" placeholder="YY" aria-label="YY" aria-describedby="basic-addon1" pattern="\d{2}" required>
               </div>
             </div>
             <div class="form-group col-sm-8">
               <label for="card-number">Card Number</label>
-              <input id="card-number" type="text" class="form-control" placeholder="Card Number" aria-label="Card Holder" aria-describedby="basic-addon1" pattern="\d{16}" required>
+              <input id="card-number" name="card_number" type="text" class="form-control" placeholder="Card Number" aria-label="Card Holder" aria-describedby="basic-addon1" pattern="\d{16}" required>
             </div>
             <div class="form-group col-sm-4">
               <label for="cvc">CVC</label>
-              <input id="cvc" type="text" class="form-control" placeholder="CVC" aria-label="Card Holder" aria-describedby="basic-addon1" pattern="\d{3}" required>
+              <input id="cvc" name="cvv" type="text" class="form-control" placeholder="CVC" aria-label="Card Holder" aria-describedby="basic-addon1" pattern="\d{3}" required>
             </div>
             <div class="form-group col-sm-12">
-              <button type="button" class="btn btn-primary btn-block" id="submit-btn">Proceed</button>
+              <button type="submit" class="btn btn-primary btn-block" id="submit-btn">Proceed</button>
             </div>
           </div>
         </div>
