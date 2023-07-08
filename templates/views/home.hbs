@@ -97,15 +97,6 @@ section .title {
   font-family: "Ubuntu", sans-serif;
 }
 
-section .title::before {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  width: 180px;
-  height: 3px;
-  transform: translateX(-50%);
-}
 
 section .title::after {
   position: absolute;
@@ -219,10 +210,10 @@ section .title::after {
 /*  Home  */
 .home {
   display: flex;
-  background: url("https://source.unsplash.com/720x600/?dark,trees") no-repeat
+  background: url("https://img.freepik.com/free-photo/firefighters-rescued-survivors_1150-8370.jpg?w=1060&t=st=1688835891~exp=1688836491~hmac=410a029b413915b3deaa1a8b4a3c50e832362cca9443aac780b6a43c6aaf5081") no-repeat
     center;
   height: 100vh;
-  color: #fff;
+  color: #000000;
   min-height: 500px;
   background-size: cover;
   background-attachment: fixed;
@@ -283,7 +274,9 @@ section .title::after {
 
 /*  About  */
 .about {
-  background: radial-gradient(#e1efff, white);
+  background-color: #1A1A1A;
+  color: white;
+
 }
 .about .title::after {
   
@@ -302,6 +295,10 @@ section .title::after {
   width: 400px;
   object-fit: cover;
   border-radius: 6px;
+  transition: transform 0.3s ease-in-out;
+}
+.about .about-content .left img:hover{
+  transform: scale(1.1);
 }
 
 .about .about-content .right {
@@ -656,6 +653,12 @@ section .title::after {
 .contact .right form .name {
   margin-right: 10px;
 }
+#breaking-news{
+  background-color: #1A1A1A;
+  margin-top:65px;
+  height: 1.4rem;
+
+}
 
 .contact .right form .field input,
 .contact .right form .textarea textarea {
@@ -794,7 +797,7 @@ footer {
   color: #888c8d;
   text-align: center;
 }
-
+/*
 footer span a {
   color: #1e3551;
   text-decoration: none;
@@ -803,6 +806,7 @@ footer span a {
 footer span a:hover {
   text-decoration: underline;
 }
+*/
 
 /*  Media Query  */
 @keyframes pulsate {
@@ -948,10 +952,10 @@ footer span a:hover {
     {{>navbar}}
 
 
-    <div class="ticker-container">
+    <div class="ticker-container" id="breaking-news">
   <div class="ticker">
-    <span class="ticker-text" style="color:red; font-weight:1000;">Flood alert in Gujrat : </span>
-    <span class="ticker-text" style="color:red;"> Fishermen please stay away from sea area</span>
+    <span class="ticker-text" style="color:red; font-weight:1000;">**Flood alert in Gujrat : </span>
+    <span class="ticker-text" style="color:red;">Fishermen please stay away from sea area**</span>
   </div>
 </div>
 
@@ -1026,7 +1030,7 @@ footer span a:hover {
       <h2 class="title">Rescue Team</h2>
       <div class="about-content">
         <div class="column left">
-          <img src="https://source.unsplash.com/626x626/?rescue" alt="Profile Image 626x626">
+          <img src="https://img.freepik.com/free-vector/emergency-cartoon-compositions-set-with-rescue-ambulance-workers-isolated-vector-illustration_1284-77188.jpg?w=1060&t=st=1688835904~exp=1688836504~hmac=cbbbc8077f4a2e798bb4c6b953b037057bff5d7d7f8683a576a3884594dbb812" alt="Profile Image 626x626">
         </div>
         <div class="column right">
           <div class="text">Rescue teams are composed of trained professionals<span class="typing-2"></span></div>
@@ -1156,32 +1160,33 @@ footer span a:hover {
   <!-- Projects -->
   <section class="projects" id="projects">
     <div class="max-width">
-      <h2 class="title">What We Are Providing</h2>
+      <h2 class="title">What We Are Providing?</h2>
       <div class="carousel owl-carousel">
         <div class="card">
           <div class="box">
-            <img src="https://source.unsplash.com/720x600/?data" alt="">
+            
+            <img src="https://img.freepik.com/free-vector/data-extraction-concept-illustration_114360-4766.jpg?w=1060&t=st=1688836903~exp=1688837503~hmac=a98cd6977f7b02660df700de55d9eed78fab9180ec821dde9fd9d70653f63aa8" alt="">
             <div class="text">Real Time Data</div>
             <p>Gather Real time data and display on the web page</p>
           </div>
         </div>
         <div class="card">
           <div class="box">
-            <img src="https://source.unsplash.com/720x600/?danger" alt="">
+            <img src="https://cdn-icons-png.flaticon.com/512/752/752755.png?w=740&t=st=1688836953~exp=1688837553~hmac=cf4a08196fbed67b02d60fbd402db36381c26bbc79da48d7a31be9ac3b9e16a3" alt="">
             <div class="text">Alerts</div>
             <p>Predict the data and alert our community to be up to date with the condition</p>
           </div>
         </div>
         <div class="card">
           <div class="box">
-            <img src="https://source.unsplash.com/720x600/?money" alt="">
+            <img src="https://img.freepik.com/free-vector/indian-rupee-money-bag_23-2147993757.jpg?size=626&ext=jpg&ga=GA1.1.497628978.1687449714&semt=sph" alt="">
             <div class="text">Fund Raise and Shelters Providing</div>
             <p>Raising the fund and Providing shelders to the hostages</p>
           </div>
         </div>
         <div class="card">
           <div class="box">
-            <img src="https://source.unsplash.com/720x600/?messanger" alt="">
+            <img src="https://images.unsplash.com/photo-1488998287214-1e668a8e0dc4?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8bWVzc2FuZ2VyfHx8fHx8MTY4ODgzNzA2Ng&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=720" alt="">
             <div class="text">Building Community</div>
             <p>We are creating a large community which can be up to date by sharing data to each other</p>
           </div>
