@@ -1,15 +1,15 @@
 # Resilient-Community
-## _A Disaster Management application in which user will get alert before the disaster. He will get real time data related to disasters and a community to interact with each-other and develop findings from data visualization._
+## _A Disaster Management application in which the user will get an alert before the disaster. He will get real-time data related to disasters and a community to interact with each other and develop findings from data visualization._
 
 
 
 How to clone
 
 ```sh
-git clone <App-Link>
+git clone <app-link>
 ```
 
-#### Open the File in vs code
+#### Open the File in VS Code
 
 Install Dependencies: 
 
